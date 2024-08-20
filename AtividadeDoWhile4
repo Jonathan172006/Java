@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class CalculadoraNotas {
+public class AtividadeDoWhile4 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int aluno = 1;
         double somaNotas = 0;
         double mediaTurma = 0;
@@ -11,9 +11,9 @@ public class CalculadoraNotas {
         do {
             System.out.println("\nAluno " + aluno + ":");
             System.out.print("Digite a primeira nota: ");
-            double nota1 = scanner.nextDouble();
+            double nota1 = sc.nextDouble();
             System.out.print("Digite a segunda nota: ");
-            double nota2 = scanner.nextDouble();
+            double nota2 = sc.nextDouble();
 
             double mediaAluno = (nota1 + nota2) / 2;
 

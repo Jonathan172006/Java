@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Main {
+public class AtividadeDoWhile3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int N;
         int in = 0;
@@ -11,12 +11,12 @@ public class Main {
 
         // Ler o valor de N (quantidade de números a serem lidos)
         System.out.print("Digite a quantidade de números (N): ");
-        N = scanner.nextInt();
+        N = sc.nextInt();
 
         // Ler os N valores e contar quantos estão no intervalo [10, 20] e quantos estão fora
         do {
             System.out.print("Digite um número: ");
-            int X = scanner.nextInt();
+            int X = sc.nextInt();
 
             if (X >= 10 && X <= 20) {
                 in++;
@@ -31,6 +31,6 @@ public class Main {
         System.out.println(in + " in");
         System.out.println(out + " out");
 
-        scanner.close();
+        sc.close();
     }
 }
